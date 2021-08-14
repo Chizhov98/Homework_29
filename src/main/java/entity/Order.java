@@ -1,5 +1,7 @@
 package entity;
 
+import entity.electronics.Electronics;
+
 import java.util.List;
 
 /** tiny type example*/
@@ -13,7 +15,7 @@ public class Order {
         this.customer =customer;
         this.purchases = purchases;
     }
-    
+
     /** it is only for checking result*/
     @Override
     public String toString() {

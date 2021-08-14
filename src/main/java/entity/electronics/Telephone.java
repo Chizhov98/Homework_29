@@ -1,13 +1,17 @@
 package entity.electronics;
 
-import entity.Electronics;
-import entity.Manufacturer;
-import lombok.AllArgsConstructor;
+import entity.manufacturer.Manufacturer;
 
-@AllArgsConstructor
+
+
 public class Telephone implements Electronics {
     private double price;
     private Manufacturer manufacturer;
+
+    private Telephone(double price, Manufacturer manufacturer) {
+        this.price = price;
+        this.manufacturer = manufacturer;
+    }
 
     @Override
     public void doWork() {
@@ -15,7 +19,7 @@ public class Telephone implements Electronics {
     }
 
     public Electronics clone() {
-        return new Television.Builder()
+        return new Telephone.Builder()
                 .setPrice(price)
                 .setManufacturer(manufacturer.clone()).
                         build();

@@ -1,13 +1,16 @@
 package entity.electronics;
 
-import entity.Electronics;
-import entity.Manufacturer;
-import lombok.AllArgsConstructor;
+import entity.manufacturer.Manufacturer;
 
-@AllArgsConstructor
+
 public class Television implements Electronics {
     private double price;
     private Manufacturer manufacturer;
+
+    private Television(double price, Manufacturer manufacturer) {
+        this.price = price;
+        this.manufacturer = manufacturer;
+    }
 
     @Override
     public void doWork() {

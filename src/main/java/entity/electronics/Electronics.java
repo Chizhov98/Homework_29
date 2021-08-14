@@ -1,4 +1,4 @@
-package entity;
+package entity.electronics;
 
 public interface Electronics {
     void doWork();

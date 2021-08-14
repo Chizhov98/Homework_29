@@ -1,8 +1,7 @@
 package creator.electronic;
 
-import creator.ElectronicsCreator;
-import entity.Electronics;
-import entity.Manufacturer;
+import entity.electronics.Electronics;
+import entity.manufacturer.Manufacturer;
 import entity.electronics.Television;
 
 public class TelevisionCreator implements ElectronicsCreator {

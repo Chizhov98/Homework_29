@@ -1,6 +1,5 @@
 package entity.manufacturer;
 
-import entity.Manufacturer;
 import lombok.Getter;
 
 @Getter
@@ -9,6 +8,6 @@ public class Apple implements Manufacturer {
 
     @Override
     public Manufacturer clone(){
-        return this;
+        return new Apple();
     }
 }

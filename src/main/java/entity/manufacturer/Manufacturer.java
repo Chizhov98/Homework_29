@@ -1,4 +1,4 @@
-package entity;
+package entity.manufacturer;
 
 public interface Manufacturer {
     String getName();
